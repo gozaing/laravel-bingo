@@ -76,5 +76,11 @@
                 </div>
             </div>
         </div>
+        <script>
+            window.Laravel = <?php echo json_encode([
+                            'csrfToken' => csrf_token(),
+                    ]) .PHP_EOL; ?>
+        </script>
+        <script src="/js/app.js"></script>
     </body>
 </html>

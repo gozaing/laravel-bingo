@@ -3,9 +3,7 @@
 @section('content')
     <div>
         @foreach ($items as $item)
-        <div>
-            <a href="{{ $item->link }}">{{ $item->title }}</a>
-        </div>
+            <rss-item link="$item->link" title="$item->title"></rss-item>
         @endforeach
     </div>
 @endsection
